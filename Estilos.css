@@ -1,0 +1,165 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    /* overflow: hidden;*/
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    /* para separar los iconos*/
+    align-items: center;
+}
+
+.header {
+    background: #333;
+    padding: 1rem 0;
+    position: fixed;
+    /*mantener el encabezado sin moverse*/
+    left: 0;
+    top: 0;
+    right: 0%;
+    /* tambien se puede usar widht al 100% */
+    background-color: black;
+}
+
+.header a {
+    color: gray;
+    text-decoration: none;
+}
+
+.menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.menu ul li a:hover {
+    color: white;
+}
+
+.main {
+    padding-top: 4rem;
+    /*el espacio que quita el encabezado por ser fijo*/
+}
+
+.seccion1 {
+    background-image: url('Imagenes/fondo.jpg');
+    height: 600px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(19, 16, 16, 0.788);
+}
+
+.seccion1 a {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    padding: 20px;
+    border: 1px solid;
+    text-align: center;
+    border-color: white;
+    color: white;
+    text-decoration: none;
+}
+
+.contenedor1 {
+    width: 85%;
+    max-width: 750px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.seccion2 h2 {
+    margin-top: 3.5rem;
+}
+
+.subrayado {
+    width: 4rem;
+    display: inline-table;
+    height: .05rem;
+    background: black;
+    /*margin-block-end: 1rem;*/
+}
+
+.texto {
+    padding: 3rem 0rem;
+    /* toma el valor de arriba y abajo mas no de la derecha e izq*/
+}
+
+.team img {
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+.team h4 {
+    margin-top: 2rem;
+}
+
+.team h6 {
+    color: gray;
+}
+
+.team p {
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 0px;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+
+.team .fab {
+    color: black;
+    margin-top: 0rem;
+}
+
+.PartesMenu {
+    background-color: black;
+    margin-top: 4rem;
+    padding: 40px;
+}
+
+.fondo {
+    background-color: rgb(228, 229, 235);
+}
