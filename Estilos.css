@@ -106,7 +106,7 @@ h1 {
 
 .contenedor1 {
     width: 85%;
-    max-width: 750px;
+    max-width: 850px;
     margin: 0px auto;
     text-align: center;
 }
@@ -162,4 +162,59 @@ h1 {
 
 .fondo {
     background-color: rgb(228, 229, 235);
+}
+
+.contenedor2 {
+    width: 85%;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.contenedor2 table {
+    padding: 2rem 0;
+}
+
+.contenedor2 img {
+    /*margin: 1rem;*/
+    float: left;
+    text-align: center;
+    padding: 1.5 rem;
+    max-width: 425px;
+}
+
+.contenedor2 h2 {
+    text-align: left;
+    padding: 0 2.5rem;
+}
+
+.contenedor2 p {
+    text-align: left;
+    padding: 2.5rem;
+    line-height: 1;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+form p {
+    grid-column: 1 / 2;
+}
+
+form label {
+    display: block;
+}
+
+.informacion {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.form p {
+    padding: 0px;
+    line-height: 0;
+    display: block;
+    margin: 1rem 0;
 }
