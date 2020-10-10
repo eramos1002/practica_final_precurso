@@ -193,6 +193,18 @@ h1 {
     line-height: 1;
 }
 
+.form {
+    box-sizing: border-box;
+    color: gray;
+    padding: 4rem 0;
+}
+
+.contacto-form p {
+    padding: 0rem;
+}
+
+
+/*
 form {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -217,4 +229,4 @@ form label {
     line-height: 0;
     display: block;
     margin: 1rem 0;
-}
+}*/
