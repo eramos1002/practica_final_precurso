@@ -15,21 +15,19 @@
 <body>
     <header class="header">
         <div class="contenedor">
-            <div id="elementos">
-                <img src="Imagenes/logo.gif">
-            </div>
+            <div id="simbolo"> </div>
             <div class="menu">
                 <ul>
                     <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li> <a href="">SERVICES</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li> <a href="#SERVICES">SERVICES</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="inicio">
         <div class="seccion1">
             <p>
                 <h4> WELCOME, WE ARE BABEL</h4>
@@ -38,7 +36,7 @@
             <a href="">TAKE A LOOK</a>
         </div>
 
-        <div class="contenedor1">
+        <div class="contenedor1" id="ABOUT">
             <div class="seccion2">
                 <h2>OUR STORY</h2>
                 <hr class="subrayado">
@@ -108,7 +106,7 @@
                 </TABle>
             </div>
         </div>
-        <div class="seccion3"></div>
+        <div class="seccion3" id="SERVICES"></div>
         <div class="PartesMenu">
             <h1>SERVICIOS</h1>
         </div>
@@ -187,59 +185,70 @@
                 </tr>
             </table>
         </div>
-        <div class="seccion4">
+        <div class="seccion4" id="CONTACT">
             <div class="PartesMenu">
                 <h1>CONTACTO</h1>
             </div>
             <div class="contenedor2">
                 <div class="form">
                     <div class="contacto-form">
-                        <form action=""></form>
-                        <p><input type="text" name="datos" placeholder="NAME"></p>
-                        <p><input type="email" name="datos" placeholder="EMAIL"></p>
-                        <p> <input type="text" name="datos" placeholder="SUBJECT"></p>
-                        <p><label for="texto1" name="datos">MESSAGE </label>
-                            <TEXtarea id="texto1" rows="10"></TEXtarea>
-                        </p>
-                        <button> SUBMIT </button>
+                        <form action="">
+                            <p><input type="text" name="datos" placeholder="NAME"></p>
+                            <p><input type="email" name="datos" placeholder="EMAIL"></p>
+                            <p> <input type="text" name="datos" placeholder="SUBJECT"></p>
+                            <p><label for="texto1" name="datos">MESSAGE </label>
+                                <p>
+                                    <TEXtarea id="texto1" rows="10"></TEXtarea>
+                                </p>
+                            </p>
+
+                            <p>
+                                <input type="submit" id="submit" value="SUBMIT">
+                                <!--<button id="submit"> SUBMIT </button></p>-->
+                        </form>
                     </div>
                     <div class="contacto-info">
-
+                        <form action="contacto-info">
+                            <h4> CALL US</h4>
+                            <ul>
+                                <li> <a href="tel: +0123777">+0 123.777.999 </a></li>
+                                <li> <a href="tel: +0123888666">+0 123.888.666 </a></li>
+                            </ul>
+                            <h4> VISIT US </h4>
+                            <ul>
+                                <li> 458 BROADWAY </li>
+                                <li> FIFTH FLOOR </li>
+                            </ul>
+                            <h4> HELP </h4>
+                            <ul>
+                                <li> NEED HELP? DON'T HESTIATE TO ASK US, EMAIL US DIRECTLY OR CALL US. </li>
+                                <li> <a href="mailto:CONTACT@EMAIL.COM">CONTACT@EMAIL.COM</a> </li>
+                            </ul>
+                        </form>
                     </div>
-                    <form action="contacto-info">
-
-                        <h4> CALL US</h4>
-                        <ul>
-                            <li> +0 123.777.999 </li>
-                            <li> +0 123.888.666 </li>
-                        </ul>
-                        <h4> VISIT US </h4>
-                        <ul>
-                            <li> 458 BROADWAY </li>
-                            <li> FIFTH FLOOR </li>
-                        </ul>
-                        <h4> HELP </h4>
-                        <ul>
-                            <li> NEED HELP? DON'T HESTIATE TO ASK US, EMAIL US DIRECTLY OR CALL US. </li>
-                            <li name="contact-email"> CONTACT@EMAIL.COM</li>
-                        </ul>
-
-                        </p>
-                    </form>
                 </div>
             </div>
         </div>
-        </div>
-
-
     </main>
     <footer class="footer">
-        <div class="contenedor2">
-            <p> Pagina final</p>
+        <div class="Return">
+            <p> <a href="#inicio"><i class="fas fa-chevron-up fa-2x"></i></a></p>
         </div>
-        aLGO RAPIDO</FOOTer>
-</body>
+        <div class="Enlaces">
 
-</html>
+            <i class="fab fa-facebook-f "></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-google-plus-g"></i>
+        </div>
+        <div class="Copyright">
+            <p>
+                <h4>Copyright</h4>
+            </p>
+        </div>
+    </footer>
+
+</body>
 
 </html>

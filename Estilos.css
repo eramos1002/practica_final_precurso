@@ -13,7 +13,6 @@ p {
     margin-bottom: 1.6rem;
     line-height: 1.5;
     text-align: center;
-    /* overflow: hidden;*/
 }
 
 h1 {
@@ -43,6 +42,24 @@ h1 {
     right: 0%;
     /* tambien se puede usar widht al 100% */
     background-color: black;
+    border: 0;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.contenedor #simbolo {
+    float: left;
+    width: 100px;
+    height: 25px;
+    background: url("Imagenes/simbolo.png") no-repeat;
+    margin-top: 0.1rem;
+    margin-left: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.contenedor #simbolo:hover {
+    background: url("Imagenes/simbolo.gif") no-repeat;
+    transition: all 0.3s ease;
 }
 
 .header a {
@@ -88,7 +105,6 @@ h1 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-color: rgba(19, 16, 16, 0.788);
 }
 
 .seccion1 a {
@@ -120,7 +136,6 @@ h1 {
     display: inline-table;
     height: .05rem;
     background: black;
-    /*margin-block-end: 1rem;*/
 }
 
 .texto {
@@ -172,14 +187,24 @@ h1 {
 
 .contenedor2 table {
     padding: 2rem 0;
+    margin: 0;
+}
+
+.contenedor2 td {
+    overflow: hidden;
 }
 
 .contenedor2 img {
-    /*margin: 1rem;*/
     float: left;
     text-align: center;
-    padding: 1.5 rem;
     max-width: 425px;
+    max-height: 425px;
+    transition: all 5s ease;
+}
+
+.contenedor2 img:hover {
+    transform: scale(1.2);
+    transition: all 5s ease;
 }
 
 .contenedor2 h2 {
@@ -189,7 +214,7 @@ h1 {
 
 .contenedor2 p {
     text-align: left;
-    padding: 2.5rem;
+    padding: 2.5em;
     line-height: 1;
 }
 
@@ -197,36 +222,89 @@ h1 {
     box-sizing: border-box;
     color: gray;
     padding: 4rem 0;
+    display: grid;
+    /* dividir el formulario*/
+    grid-template-columns: 4fr 1fr;
 }
 
 .contacto-form p {
-    padding: 0rem;
+    padding: 0;
 }
 
-
-/*
-form {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 20px;
+.contacto-form form {
+    /*margin: 0rem;*/
+    padding: 1.2em;
 }
 
-form p {
-    grid-column: 1 / 2;
+.contacto-form #submit {
+    width: 104%;
+    padding: .7em;
+    border: none;
+    background: rgb(236, 234, 234);
+    text-transform: uppercase;
+    color: gray;
 }
 
-form label {
-    display: block;
+.contacto-form input {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    border-bottom: 2px solid gray;
 }
 
-.informacion {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+.contacto-form textarea {
+    width: 100%;
+    padding: .7em;
+    border-bottom: 1px solid gray;
 }
 
-.form p {
+.contacto-info ul {
+    margin: 0px;
     padding: 0px;
-    line-height: 0;
+    list-style: none;
+}
+
+.contacto-info h4 {
+    color: black;
+}
+
+.contacto-info h4,
+.contacto-info ul {
+    margin: .5em;
+    margin-left: 4em;
+}
+
+.contacto-info a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer {
+    background-color: black;
+    margin-top: 0rem;
+    padding: .5rem;
+    color: gray;
+    text-align: center;
+}
+
+.Return i {
+    color: rgba(85, 83, 83, 0.842);
+}
+
+.Enlaces i {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: rgba(85, 83, 83, 0.842);
+    color: #232323;
+    font-size: inherit;
     display: block;
-    margin: 1rem 0;
-}*/
+    display: inline;
+    text-align: center;
+    margin: .5rem;
+}
+
+.Enlaces i:hover {
+    background: white;
+}
